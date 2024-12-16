@@ -1,0 +1,22 @@
+{
+  "name": "onion_react",
+  "version": "1.0.0",
+  "description": "layer of react application ",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeet-mahesh-shirodkar/onion_react.git"
+  },
+  "author": "jeet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeet-mahesh-shirodkar/onion_react/issues"
+  },
+  "homepage": "https://github.com/jeet-mahesh-shirodkar/onion_react#readme",
+  "devDependencies": {
+    "parcel": "^2.13.2"
+  }
+}
