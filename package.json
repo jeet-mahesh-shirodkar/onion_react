@@ -17,6 +17,14 @@
   },
   "homepage": "https://github.com/jeet-mahesh-shirodkar/onion_react#readme",
   "devDependencies": {
-    "parcel": "^2.13.2"
-  }
+    "parcel": "^2.13.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
 }
