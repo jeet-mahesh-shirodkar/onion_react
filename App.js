@@ -34,15 +34,38 @@
 import React from "react";
 import ReactDom from 'react-dom/client';
 
-const heading = React.createElement(
+// React Element
+/**
+ * const heading = React.createElement(
     "h1",
     {id:'heading'},
-    "Hello for React element 😍"
+    "Hello for React element 😍 "
 );
 
-//JSX 
-const jsxHeading = <h1 id="jsxHeading">Hello from JSX element 🚀 😍</h1>
+//JSX // React Element
+const jsxHeading = <h1 id="jsxHeading">Hello from JSX element 🚀 😍 </h1>
 console.log(heading);
 console.log(jsxHeading);
+ */
+
+//React Component 
+const HeadingChild = () =>{
+    return (
+        <h2 id="headingChild">Hello from child Component 🚀 </h2>
+    )
+}
+
+const Heading = () => {
+    return (
+        <div className="container">
+            <h1 className="heading">Hello from React Component 😍 </h1>
+            <HeadingChild/>
+        </div>
+    )
+}
+
 const root = ReactDom.createRoot(document.getElementById('root'));
-root.render(jsxHeading);
+//Functions are not valid as a React child. 
+//This may happen if you return Heading instead of <Heading /> from render.
+// Or maybe you meant to call this function rather than return it.
+root.render(<Heading/>); //we need to render in tag format as to babel to know.
