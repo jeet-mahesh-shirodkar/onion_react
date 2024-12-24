@@ -32,5 +32,9 @@ It relies on the static structure of ES modules (import and export) to determine
 - JSX => React.createElement => ReactElement JS Object => HTMLElement(render)
 - This conversion is done by Babel
 - Attribute should be in camelCase format.
+- We can write any javascript code inside JSX using { 'curly braces' } 
+- Takes care of cross site scripting attack
 
-
+# Functional Component
+- JavaScript Function which takes props as arguments and returns JSX code
+- Component Composition - Using child component in parent component is called component composition
