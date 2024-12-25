@@ -38,3 +38,18 @@ It relies on the static structure of ES modules (import and export) to determine
 # Functional Component
 - JavaScript Function which takes props as arguments and returns JSX code
 - Component Composition - Using child component in parent component is called component composition
+
+# Config Driven UI
+- UI is based on configuration like specific location, specific users.
+- It is a user Interface that is built and configured using a
+declaration configuration file or data structure, rather than
+being hardcoded.
+- Config is the data coming from the api which keeps on changing
+according to different factors like user, location, etc.
+
+# OptionChaining 
+- resData?
+
+# Props
+- Data passed as an argument to Component
+- Passing the Arguments from component to component is called as Props Passing
