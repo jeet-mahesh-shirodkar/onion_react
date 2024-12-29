@@ -49,3 +49,11 @@
 .resImg{
     width: 100%;
 }
+
+.filter-container{
+    margin: 10px;
+}
+
+.filter-btn{
+    padding: 5px;
+}
