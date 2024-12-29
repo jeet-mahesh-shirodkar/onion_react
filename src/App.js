@@ -31,12 +31,6 @@
     // converts the createElement to html tag and show it in browser
  */
 
-import React from "react";
-import ReactDom from 'react-dom/client';
-import './App.css';
-import Header from "./components/Header";
-import BodyComp from "./components/BodyComp";
-
 // React Element
 /**
  * const heading = React.createElement(
@@ -75,14 +69,18 @@ const HeadingChild = () =>{
  *  - Address
  *  - Contact
  */
-
-
+import React from "react";
+import ReactDom from 'react-dom/client';
+import './App.css';
+import Header from "./components/Header";
+import BodyComp from "./components/BodyComp";
 
 const AppLayout = () => {
     return (
         <div className="app">
             <Header/>
             <BodyComp/>
+            {console.log(BodyComp())}
         </div>
     )
 }
