@@ -26,6 +26,7 @@ It relies on the static structure of ES modules (import and export) to determine
 
 # React createElement 
 - React.createElement ={code}> React Element JS Object ={ReactDom}> HTMLElement(render)
+- Plain Javascript Object
 
 # JSX 
 - Javascript syntax extension which allows developer to write html-like or xml-like code in Javascript files.
@@ -53,3 +54,30 @@ according to different factors like user, location, etc.
 # Props
 - Data passed as an argument to Component
 - Passing the Arguments from component to component is called as Props Passing
+
+# Unique Key id while using map
+- When we have components at same level and if a new component
+comes on the first without ID, DOM is going to re-render all the
+components again. As DOM can’t identify where to place it.
+- But if we give each of them a unique ID then react knows where
+to put that component according to the ID. It is a good
+optimization and performance thing.
+
+# Hooks
+- JS utility function
+
+# useState
+- When the state variable update, react will re-renders the component.
+- Point about state variables is that whenever they update, React triggers a reconciliation cycle and re-renders the component.
+- This means that as soon as the data layer changes, React promptly updates the UI layer. The data layer is always kept in sync with the UI layer.
+- To achieve this rapid operation, React employs a reconciliation algorithm, also known as the diffing algorithm or React-Fibre.
+- React-Fiber - a powerhouse reimplementation of React's algorithm. The goal of React Fiber is to increase its suitability for areas like animation, layout, and gestures. Its
+headline feature is incremental rendering: the ability to split rendering work into chunks and spread it out over multiple frames. These days, we can use JavaScript and React alongside popular libraries like GSAP (GreenSock Animation Platform) and Three.js.
+
+# Virtual DOM Obj
+- When you create Element in React, you are actually creating Virtual DOM Objects.
+These virtual replicas are synced with the real DOM, a process known as "Reconciliation" or React "diffing" algorithm.
+- Essentially, every rendering cycle compares the new UI blueprint (updated VDOM) with the old one (previous VDOM) and makes precise changes to the actual DOM accordingly.
+
+# React Fiber Architecture
+- Increase its suitablity for areas like animation, layout and gestures. Its headline feature is incremental rendering, The ability to split rendering work into chunks and spread it out over multiple frames.
