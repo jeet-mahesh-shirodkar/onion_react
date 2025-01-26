@@ -81,3 +81,8 @@ These virtual replicas are synced with the real DOM, a process known as "Reconci
 
 # React Fiber Architecture
 - Increase its suitablity for areas like animation, layout and gestures. Its headline feature is incremental rendering, The ability to split rendering work into chunks and spread it out over multiple frames.
+
+# useEffect
+- useEffect hook runs, once the component is loaded(render method runs).
+- Two arguments are passed in useEffect function 1 - arrow function 2 - dependency array. 
+- Loaded -> Render -> Api -> Re-Render.
