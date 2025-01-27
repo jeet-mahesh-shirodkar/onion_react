@@ -1,6 +1,14 @@
+import { useState } from "react";
 import { LOGO_URL } from "../utils/constant";
 
 const Header = () =>{
+
+    const [loginStatus, setLoginStatus] = useState("Offline");
+
+    const handleLoginStatus = () =>{
+        setLoginStatus((loginStatus === "Online")?"Offline":"Online");
+    }
+
     return (
         <div className="header">
             <div className="logo-container">
@@ -14,6 +22,9 @@ const Header = () =>{
                     <li>Contact</li>
                     <li>Cart</li>
                 </ul>
+                <button onClick={handleLoginStatus}>
+                    {loginStatus}
+                </button>
             </div>
         </div>
     )
