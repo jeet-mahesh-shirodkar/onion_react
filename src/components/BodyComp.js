@@ -19,12 +19,9 @@ const BodyComp = () =>{
         setRestaurantList(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants)
     }
 
-    if(restaurantList.length === 0){
-        return <Shimmer/>
-    }
-
     return (
         <div className="bodyComp">
+            {(restaurantList.length === 0) && <Shimmer/>}
             <div className="filter-container">
                 <button 
                 className="filter-btn"
