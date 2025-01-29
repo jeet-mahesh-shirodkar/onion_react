@@ -1,11 +1,12 @@
 import cardList from "../utils/mockData";
 import RestaurantCard from "./RestaurantCard";
-import {useEffect, useState} from 'react';
+import {use, useEffect, useState} from 'react';
 import Shimmer from "./Shimmer";
 
 const BodyComp = () =>{
     const [restaurantList,setRestaurantList] = useState([]);
-    //console.log(restaurantList);
+    const [searchText,setSearchText] = useState("");
+    console.log(" <= Body Component loaded => ");
 
     useEffect(()=>{
         fetchData();
@@ -23,6 +24,17 @@ const BodyComp = () =>{
         <div className="bodyComp">
             {(restaurantList.length === 0) && <Shimmer/>}
             <div className="filter-container">
+                    <input 
+                        autoFocus
+                        className="search-input" 
+                        value={searchText} 
+                        onChange={ (e) => {
+                            setSearchText(e.target.value);
+                        }}/>
+                    <button 
+                        className="search-btn"
+                        >Search
+                    </button>
                 <button 
                 className="filter-btn"
                 onClick={()=> {
