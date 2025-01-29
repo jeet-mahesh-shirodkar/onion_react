@@ -54,11 +54,12 @@
     margin: 5px;
 }
 
-.filter-btn{
+.filter-btn, .search-btn, .search-input{
     padding: 5px;
+    margin: 10px;
 }
 
-.search-container{
+.search-container-shimmer{
     margin: 5px;
     width: 100%;
     height: 30px;
