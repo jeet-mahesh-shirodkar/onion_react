@@ -6,6 +6,10 @@ import Shimmer from "./Shimmer";
 const BodyComp = () =>{
     const [restaurantList,setRestaurantList] = useState([]);
     const [searchText,setSearchText] = useState("");
+
+    // whenever the state variable update,
+    // react trigger a reconciliation cycle(re-render the component) 
+    
     console.log(" <= Body Component loaded => ");
 
     useEffect(()=>{
@@ -33,7 +37,13 @@ const BodyComp = () =>{
                         }}/>
                     <button 
                         className="search-btn"
-                        >Search
+                        onClick={()=>{
+                            let rese = restaurantList
+                            let searchedRes = rese.filter((res) => 
+                                res.info.name.toLowerCase().includes(searchText.toLowerCase())
+                            )
+                            setRestaurantList(searchedRes);
+                        }}>Search
                     </button>
                 <button 
                 className="filter-btn"
