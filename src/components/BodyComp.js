@@ -50,7 +50,6 @@ const BodyComp = () =>{
                 onClick={()=> {
                     let filteredList = restaurantList.filter((res) =>
                          res.info.avgRating > 4)
-                    //console.log(filteredList);
                     setRestaurantList(filteredList);
                 }}>
                     Filter Top Rated
